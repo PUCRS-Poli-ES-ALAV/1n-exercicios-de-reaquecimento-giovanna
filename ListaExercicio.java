@@ -15,28 +15,32 @@ public static int multDeSomasSucessivas(int a, int b){
     return a + multDeSomasSucessivas(a, b-1);
 }
 
-public static void main(String[] args) {
-   System.out.println(multDeSomasSucessivas(4,3));
+ public static int somaDeIncrementosSucessivos(int a, int b){
+     if (b == 0){
+         return a;
+     }
+     a++;
+     return (somaDeIncrementosSucessivos(a, b-1));
+ 
+ }
+ 
+ // public float calculoDeFracoes(int a){
+ 
+ // }
+ 
+ // public String inversaoDeString(String abc){
+ 
+ // }
+ 
+ // public int funcaoDeEckerman(int a, int b){
+ //     int resultado = b + 1;
+     
+ // }
+ 
+ public static void main(String[] args) {
+    System.out.println("4 * 3 = " + multDeSomasSucessivas(4,3));
+    System.out.println("5 + 4 = " + somaDeIncrementosSucessivos(5,4));
 }
-
-// public int somaDeIncrementosSucessivos(int a, int b){
-
-// }
-
-// public float calculoDeFracoes(int a){
-
-// }
-
-// public String inversaoDeString(String abc){
-
-// }
-
-// public int funcaoDeEckerman(int a, int b){
-//     int resultado = b + 1;
-    
-// }
-
-
 
 
 
